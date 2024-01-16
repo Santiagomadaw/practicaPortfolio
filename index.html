@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@300&family=Signika:wght@600&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/firstsection.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/header.css">
-    
+    <link rel="stylesheet" href="styles/presentationsection.css">
+    <link rel="stylesheet" href="styles/projectsection.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <title>Portfolio</title>
@@ -20,25 +22,40 @@
 
 <body>
     <header class="header">
-        <h1 class="header__headline">SANTIAGO MOLINA</h1>
-        <div class="header__image">
-            <img src="images/foto.png" alt="Foto perfil">
-        </div>
+        <nav class="nav">
+            <ul class="bottoms">
+                <li class="bottoms__item">
+                    <a class="btn" href="#">Proyectos</a>
+                </li>
+                <li class="bottoms__item">
+                    <a class="btn" href="#">Trabajos</a>
+                </li>
+                <li class="bottoms__item">
+                    <a class="btn" href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div class="bg__image">
-        
-
-
-    </div>
-
-    <section class="first__section"></section>
-    <section class="second__section"></section>
-    <footer class="footer"> <div class="footer__text">
-
-        <h3>Under Construction</h3>
-        <h2>FullStack Developer</h2>
-
-    </div></footer>
+    <div class="bg__image"></div>
+    <section class="presentation__section block">
+        <div class="presentation__image">
+            <img src="images/AvatarRick.png" alt="Foto perfil">
+        </div>
+        <div class="presentation__text">
+            <h3>Hi, im</h3>
+            <h1>Rick Sánchez</h1>
+            <h3>Cientifico interdimensional</h3>
+        </div>
+    </section>
+    <section class="block project__section">
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptates aspernatur dicta, totam est maxime quae consequatur possimus explicabo, exercitationem, natus commodi rerum cumque nostrum saepe a modi eaque magni.</h3>
+    </section>
+    <footer class="footer">
+        <div class="footer__text">
+            <h3></h3>
+            <h2></h2>
+        </div>
+    </footer>
 </body>
 
 </html>

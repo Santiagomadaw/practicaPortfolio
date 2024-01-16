@@ -1,26 +1,3 @@
-.footer__text h3{
-    
-    margin: 0;
-    font-family: var(--font-one);
-    font-size: 1em;
-    font-weight: lighter;
-
-    height: 3vh;
-    color: var(--second-color);
-    text-shadow: 1px 1px 1px var(--text-shadow-color);
-    
-}
-.footer__text h2{
-    margin: 0;
-    font-family: var(--font-one);
-    font-weight: lighter;
-
-    font-size: 1.5em;
-    height: 5vh;
-    color: var(--second-color);
-    text-shadow: 1px 1px 1px var(--text-shadow-color);
-    
-}
 .footer__text{
     padding: 1vh;
     display: flex;

@@ -1,0 +1,35 @@
+.presentation__image {
+    position: relative;
+    border: var(--container-border-color) 1px solid;
+    aspect-ratio: 1;
+    background: var(--container-bg-alpha);
+    display: flex;
+    box-shadow: 0px 0px 10px 5px var(--shadow),
+                inset 0px 0px 10px 5px var(--shine);
+    border-radius: 50%;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+    min-width: var(--avatar-size);
+    min-height: var(--avatar-size);
+    max-width: var(--avatar-size);
+    max-height: var(--avatar-size);
+
+}
+
+.presentation__image img {
+    aspect-ratio: initial;
+    height: 105%;
+    margin: auto;
+} 
+
+.presentation__text{
+    bottom: 0px;
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+}
+.presentation__section{
+    gap: 10vh;
+}
+
+
