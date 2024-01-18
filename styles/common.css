@@ -10,15 +10,16 @@
     --bg-color: #fbfdee;
     --bg-alpha: #fbfdee84;
 
-    --head-foot-color: #e3f34c95;
+    --head-foot-color: #e2f34c94;
     --head-foot-shadow: #1b2932b4;
 
 
     --text-shadow-color: #ff1b7a;
     --text-color: #333333;
     --font-one: Anton, sans-serif;
+    --hobber-color: #92eaf8;
 
-    --avatar-size: 40vh;
+    --avatar-size: 70vw;
 
 }
 
@@ -74,15 +75,26 @@ h1 {
     font-size: 2em;
     color: var(--text-color);
 }
-
+.section__title{
+    position: relative;
+    top: 0;
+}
 .block{
-    padding: 0;
-    height: 80vh;
+    
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px solid;
+    justify-content: center
 }
 
-
+.section__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    height: 70vh;
+    width: 96vw;
+}

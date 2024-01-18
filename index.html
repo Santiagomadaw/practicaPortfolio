@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/presentationsection.css">
     <link rel="stylesheet" href="styles/projectsection.css">
+
+    <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <title>Portfolio</title>
@@ -25,31 +27,76 @@
         <nav class="nav">
             <ul class="bottoms">
                 <li class="bottoms__item">
-                    <a class="btn" href="#">Proyectos</a>
+                    <a class="btn" href="#start">Inicio</a>
                 </li>
                 <li class="bottoms__item">
-                    <a class="btn" href="#">Trabajos</a>
+                    <a class="btn" href="#skills">Habilidades</a>
                 </li>
                 <li class="bottoms__item">
-                    <a class="btn" href="#">Contacto</a>
+                    <a class="btn" href="#projects">Proyectos</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div class="bg__image"></div>
-    <section class="presentation__section block">
-        <div class="presentation__image">
-            <img src="images/AvatarRick.png" alt="Foto perfil">
-        </div>
-        <div class="presentation__text">
-            <h3>Hi, im</h3>
-            <h1>Rick Sánchez</h1>
-            <h3>Cientifico interdimensional</h3>
-        </div>
-    </section>
-    <section class="block project__section">
-        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptates aspernatur dicta, totam est maxime quae consequatur possimus explicabo, exercitationem, natus commodi rerum cumque nostrum saepe a modi eaque magni.</h3>
-    </section>
+    <main>
+        <section id="start" class="presentation__section block">
+            <div class="presentation__image">
+                <img src="images/AvatarRick.png" alt="Foto perfil">
+            </div>
+            <div class="presentation__text">
+                <h3>Hi, im</h3>
+                <h1>Rick Sánchez</h1>
+                <h3>Cientifico interdimensional</h3>
+            </div>
+        </section>
+        <section id="skills" class="block skills__section">
+            <h2 class="section__title">Habilidades</h2>
+            <div class="skill__grid">
+                <div class="skill__item">
+                    <h3>Investigación</h3>
+                    <div class="skill__bar s100"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Tecnica</h3>
+                    <div class="skill__bar s90"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Inteligencia</h3>
+                    <div class="skill__bar s100"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Combate</h3>
+                    <div class="skill__bar s70"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Adaptación</h3>
+                    <div class="skill__bar s80"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Sociabilidad</h3>
+                    <div class="skill__bar s30"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Empatia</h3>
+                    <div class="skill__bar s10"></div>
+                </div>
+                <div class="skill__item">
+                    <h3>Limpieza</h3>
+                    <div class="skill__bar s40"></div>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section id="projects" class="block project__section">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptates aspernatur dicta, totam est
+                maxime quae consequatur possimus explicabo, exercitationem, natus commodi rerum cumque nostrum saepe
+                a
+                modi eaque magni.</h3>
+        </section>
+    </main>
     <footer class="footer">
         <div class="footer__text">
             <h3></h3>
