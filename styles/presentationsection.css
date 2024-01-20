@@ -1,5 +1,6 @@
 .presentation__image {
-    position: relative;
+    position:relative;
+    z-index: 15;
     border: var(--container-border-color) 1px solid;
     aspect-ratio: 1;
     background: var(--container-bg-alpha);
@@ -9,10 +10,33 @@
     border-radius: 50%;
     overflow: hidden;
     backdrop-filter: blur(2px);
-    max-height: 30vh;
+    height: 30%;
+    top:-20%;
+    left: 0%;
+    animation: minimize;
+    animation-timeline: scroll(nearest);
+    animation-range: cover 0 cover 40%;
+    animation-fill-mode: both;
+    
 
 }
-
+.image_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 29;
+    position: fixed;    
+    height: 100vh;
+    width: 100vw;
+}
+@keyframes rotator{
+    feColorMatrix{
+        transform: rotate3d(1, 2, 3, 0deg);}
+    to {
+        transform: rotate3d(1, 2, 3, 360deg);
+        position: fixed;
+    }
+}
 .presentation__image img {
     aspect-ratio: initial;
     height: 105%;

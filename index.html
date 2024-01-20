@@ -22,10 +22,13 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body id="start">
+    
     <header class="header">
+        
         <nav class="nav">
             <ul class="bottoms">
+                <li class="bottoms__item hidden"></li>
                 <li class="bottoms__item">
                     <a class="btn" href="#start">Inicio</a>
                 </li>
@@ -38,12 +41,13 @@
             </ul>
         </nav>
     </header>
+    <div class="image_container">
+        <div class="presentation__image rotator">
+            <img src="images/AvatarRick.png" alt="Foto perfil">
+        </div></div>
     <div class="bg__image"></div>
     <main>
-        <section id="start" class="presentation__section block">
-            <div class="presentation__image">
-                <img src="images/AvatarRick.png" alt="Foto perfil">
-            </div>
+        <section  class="presentation__section block ">
             <div class="presentation__text">
                 <h3>Hi, im</h3>
                 <h1>Rick Sánchez</h1>
@@ -55,35 +59,60 @@
             <div class="skill__grid">
                 <div class="skill__item">
                     <h3>Investigación</h3>
-                    <div class="skill__bar s100"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s100"></div>
+                    </div>
+
                 </div>
                 <div class="skill__item">
                     <h3>Tecnica</h3>
-                    <div class="skill__bar s90"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s90"></div>
+                    </div>
                 </div>
                 <div class="skill__item">
                     <h3>Inteligencia</h3>
-                    <div class="skill__bar s100"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s100"></div>
+                    </div>
                 </div>
                 <div class="skill__item">
                     <h3>Combate</h3>
-                    <div class="skill__bar s70"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s70"></div>
+                    </div>
                 </div>
                 <div class="skill__item">
                     <h3>Adaptación</h3>
-                    <div class="skill__bar s80"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s80"></div>
+                    </div>
                 </div>
                 <div class="skill__item">
                     <h3>Sociabilidad</h3>
-                    <div class="skill__bar s30"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s30"></div>
+                    </div>
                 </div>
                 <div class="skill__item">
                     <h3>Empatia</h3>
-                    <div class="skill__bar s10"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s10"></div>
+                    </div>
                 </div>
                 <div class="skill__item">
                     <h3>Limpieza</h3>
-                    <div class="skill__bar s40"></div>
+                    <div class="bar__container">
+                        <div class="bar-shine"></div>
+                        <div class="skill__bar s40"></div>
+                    </div>
                 </div>
 
             </div>
@@ -91,10 +120,13 @@
 
         </section>
         <section id="projects" class="block project__section">
-            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptates aspernatur dicta, totam est
-                maxime quae consequatur possimus explicabo, exercitationem, natus commodi rerum cumque nostrum saepe
-                a
-                modi eaque magni.</h3>
+            <div class="banner">
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum voluptates aspernatur dicta, totam est
+                    maxime quae consequatur possimus explicabo, exercitationem, natus commodi rerum cumque nostrum saepe
+                    a
+                    modi eaque magni.</h3>
+
+            </div>
         </section>
     </main>
     <footer class="footer">
