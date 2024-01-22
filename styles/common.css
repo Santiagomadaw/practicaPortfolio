@@ -4,20 +4,21 @@
     --shine: #f8ffef;
     --empty-alpha: #ffffff00;
     /*BUBBLE*/
-    --container-border-color: #e3f34c;
-    --container-bg-alpha: #e3f34c95;
 
-    --bg-color: #fbfdee;
-    --bg-alpha: #fbfdee84;
+    --container-border-color: #50fd00;
+    --container-bg-alpha: #00af09e1;
 
-    --head-foot-color: #e2f34c;
+    --bg-color: #bebebe;
+
+    --head-foot-color: #333333;
     --head-foot-shadow: #1b2932b4;
 
 
-    --text-shadow-color: #ff1b7a;
-    --text-color: #333333;
+    --inner-text-color: #333333;
+    --banner-text-color: #c4c4c4;
+
     --font-one: Anton, sans-serif;
-    --hover-color: #92eaf8;
+    --hover-color: #af00a6e1;
 
     --avatar-size: 70vw;
 
@@ -59,7 +60,7 @@ h3{
     font-family: var(--font-one);
     font-size: 1em;
     font-weight: lighter;
-    color: var(--text-color);
+    color: var(--inner-text-color);
     
 }
 h2{
@@ -67,7 +68,7 @@ h2{
     font-family: var(--font-one);
     font-weight: lighter;
     font-size: 1.5em;
-    color: var(--text-color);
+    color: var(--inner-text-color);
     
 }
 h1 {
@@ -75,7 +76,14 @@ h1 {
     font-family: var(--font-one);
     font-weight: lighter;
     font-size: 2em;
-    color: var(--text-color);
+    color: var(--inner-text-color);
+}
+p {
+    margin: 0;
+    font-family: var(--font-one);
+    font-weight: lighter;
+    font-size: 0.8em;
+    color: var(--inner-text-color);
 }
 .section__title{
     position: relative;
@@ -83,7 +91,7 @@ h1 {
     padding-bottom: 3vh;
 }
 .block{
-    
+    border: 2px red solids;
     height: 100vh;
     padding-top: 20vh;
     padding-bottom: 20vh;

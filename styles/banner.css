@@ -1,0 +1,37 @@
+.banner__section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__img{
+    
+    position: relative;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    aspect-ratio: 1;
+    width: 100vw;
+    background-image: url('../images/bannerMovile.png');
+    display: flex;
+    background-size: 100vw;;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: normal;
+}
+.banner__text{
+    position: absolute;;
+    z-index: 23;
+    padding: 6vw;
+}
+
+.banner__text h3{
+    font-style: italic;
+    color: black;
+}
+.banner__text p{
+    font-weight: bold;
+    color: black;
+    text-align: end;
+    padding-right: 5vw;
+}

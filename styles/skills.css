@@ -33,8 +33,8 @@ position: absolute;
     width: 100%;
     height: 3.5vh;
     z-index: 5;
-    border: 2px solid var(--text-color);
-    background: linear-gradient(0deg, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 20%, rgba(255,253,255,0) 30%);
+    border: 1px solid var(--inner-text-color);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 9%, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 30%, rgba(255,253,255,0) 40%, rgba(255,253,255,0) 75%, rgba(0,0,0,1) 100%);
     border-radius: 6px;
 }
 
@@ -53,55 +53,55 @@ position: absolute;
 
 .s10 {
     --percent: 10%;
-    --bar-color: #af00a6d7;
+    --bar-color: #af00a6e1;
 }
 
 .s20 {
     --percent: 20%;
-    --bar-color: #af00a6d7;
+    --bar-color: #af00a6e1;
 
 }
 
 .s30 {
     --percent: 30%;
-    --bar-color: #af00a6d7;
+    --bar-color: #af00a6e1;
 
 }
 
 .s40 {
     --percent: 40%;
-    --bar-color: hsla(71, 100%, 34%, 0.575);
+    --bar-color: #8faf00e1;
 
 }
 
 .s50 {
     --percent: 50%;
-    --bar-color: #8faf0098;
+    --bar-color: #8faf00e1;
 }
 
 .s60 {
     --percent: 60%;
-    --bar-color: #8faf0063;
+    --bar-color: #8faf00e1;
 }
 
 .s70 {
     --percent: 70%;
-    --bar-color: #8faf0063;
+    --bar-color: #8faf00e1;
 }
 
 .s80 {
     --percent: 80%;
-    --bar-color: #00af0963;
+    --bar-color: #00af09e1;
 }
 
 .s90 {
     --percent: 90%;
-    --bar-color: #00af0963;
+    --bar-color: #00af09e1;
 }
 
 .s100 {
     --percent: 100%;
-    --bar-color: #00af0963;
+    --bar-color: #00af09e1;
 }
 @keyframes visibility {
     0% {

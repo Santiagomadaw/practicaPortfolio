@@ -15,22 +15,27 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/presentationsection.css">
     <link rel="stylesheet" href="styles/projectsection.css">
-
-    <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/banner.css">
 
     <title>Portfolio</title>
 </head>
 
 <body id="start">
-    
+
     <header class="header">
-        
+
         <nav class="nav">
+            <input type="checkbox" id="menu">
+            <label for="menu" class="menu-bottom"> ☰ </label>
             <ul class="bottoms">
-                <li class="bottoms__item hidden"></li>
+
                 <li class="bottoms__item">
                     <a class="btn" href="#start">Inicio</a>
+                </li>
+                <li class="bottoms__item">
+                    <a class="btn" href="#quote">Cita</a>
                 </li>
                 <li class="bottoms__item">
                     <a class="btn" href="#skills">Habilidades</a>
@@ -41,17 +46,25 @@
             </ul>
         </nav>
     </header>
-    <div class="image_container">
-        <div class="presentation__image rotator">
-            <img src="images/AvatarRick.png" alt="Foto perfil">
-        </div></div>
-    <div class="bg__image"></div>
+
     <main>
-        <section  class="presentation__section block ">
+        <section class="presentation__section block ">
+            <div class="presentation__image">
+                <img src="images/AvatarRick.png" alt="Foto perfil">
+            </div>
             <div class="presentation__text">
                 <h3>Hi, im</h3>
                 <h1>Rick Sánchez</h1>
                 <h3>Cientifico interdimensional</h3>
+            </div>
+        </section>
+        <section class="banner__section block" id="quote">
+            <div class="banner__img"></div>
+            <div class="banner__text">
+                <h3>Sé que esta situación puede ser intimidante. Miras a tu alrededor y todo da miedo y es diferente,
+                    pero ¿sabes qué? ... hay que encarar esas situaciones, avanzar contra ellas como un toro - es así
+                    que crecemos como personas.</h3>
+                <p>- Rick Sánchez -</p>
             </div>
         </section>
         <section id="skills" class="block skills__section">

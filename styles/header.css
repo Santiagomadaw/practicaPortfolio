@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 15px;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: first baseline;
     position: sticky;
     top: 0;
     height: 10vh;
@@ -13,52 +13,100 @@
     backdrop-filter: blur(2px);
 }
 
-.bottoms__item{
+.bottoms__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: var(--text-color) solid;
+    border:2px var(--banner-text-color) solid;
+    background: var(--container-bg-alpha);
     text-align: center;
     border-radius: 0.5em;
     padding: 0.2em;
-    width: 6em;
-    font-size: 0.8em;
+    width: 5.5em;
+    font-size: 0.6em;
     height: 3em;
-    
-    
+    user-select: none;
+
+
 }
-.bottoms__item.hidden{
+
+.bottoms__item.hidden {
     display: none;
 }
-.bottoms__item:hover{
-    background-color: var(--hover-color);
-    
+
+@media (hover: hover) {
+    .bottoms__item:hover {
+        background-color: var(--hover-color);
+
+    }
 }
+
 
 .header .nav .bottoms {
     padding: 0;
     list-style: none;
     margin: 0;
-    display: flex;
+    display: none;
+    flex-direction: row;
     gap: 5px;
+    color: var(--banner-text-color);
+
+}
+
+#menu:checked~ul {
+    display: flex;
+}
+
+#menu {
+    display: none;
+}
+
+#menu:checked~.menu-bottom {
+    background: var(--container-bg-alpha);
 }
 
 .header .nav {
     display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 5px;
+
+
+
+
 }
-.header .nav .bottoms a{
+
+.menu-bottom {
+
+    box-sizing: border-box;
+    border:2px var(--banner-text-color) solid;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    width: 3em;
+    font-size: 0.62em;
+    color: var(--banner-text-color);
+    height: 3em;
+    user-select: none;
+}
+
+.header .nav .bottoms a {
     text-decoration: none;
     font-family: var(--font-one);
     font-weight: lighter;
-    color: var(--text-color);
+    color: var(--inner-text-color);
     font-size: 1em;
 
 
 }
 
 
-    
-@keyframes minimize {
+
+
+/* La idea es que la imagen de presentacion se quedase reducida 
+al scrollear pero no consigo hacer una version que no rompa en caso de
+de no ser compatible */
+/* @keyframes minimize {
     from {
         
     }
@@ -66,8 +114,8 @@
     to {
         
         
-        height: 15%;
-        top:-50%;
-        left: -25%;
+        height: 10%;
+        top:-53%;
+        left: -28%;
     }
-}
+} */
