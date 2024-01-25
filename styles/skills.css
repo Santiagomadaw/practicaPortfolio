@@ -141,7 +141,7 @@ position: absolute;
     }
 }
 
-@media (width > 768px) {
+@media (width > 767px) {
     .skill__grid {
         width: 70%;
         gap: 2em;
@@ -152,16 +152,6 @@ position: absolute;
     .skill__bar {
         height: 5vh;
     }
-    .bar-shine {
-    
-        height: 5vh;
-    }
-}
-@media (width > 1024px) {
-    .skill__bar {
-        height: 5vh;
-    }
-    .bg__image {transform: rotate(90deg);}
     .bar-shine {
     
         height: 5vh;
