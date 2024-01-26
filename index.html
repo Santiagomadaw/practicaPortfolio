@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f54355a1db.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -28,6 +30,12 @@
 <body id="start">
 
     <header class="header">
+        <div class="header__container">
+            <div class="bambalina"></div>
+
+        
+        <img src="/images/logolight.png" alt="" srcset="">
+
         <input type="checkbox" id="menu">
         <label for="menu" class="menu-bottom"> <span class="symbols txt-menu">menu</span><span class="symbols txt-exit">
                 arrow_back
@@ -44,10 +52,17 @@
                     <a class="btn" href="#skills">Habilidades</a>
                 </li>
                 <li class="bottoms__item">
-                    <a class="btn" href="#projects">Proyectos</a>
+                    <a class="btn" href="./galery.html">Proyectos</a>
+                </li>
+                <li class="bottoms__item">
+                    <a class="btn" href="./video.html">Video</a>
+                </li>
+                <li class="bottoms__item">
+                    <a class="btn" href="#form">Formulario</a>
                 </li>
             </ul>
         </nav>
+    </div>
     </header>
 
     <main>
@@ -62,7 +77,63 @@
             </div>
         </section>
         <section class="banner__section block" id="quote">
-            <div class="banner__img"></div>
+            <div class="banner__img">
+                <picture>
+                    <source
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 1534px) 100vw, 1534px"
+                    srcset="
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_320.jpg 320w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_482.jpg 482w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_671.jpg 671w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_949.jpg 949w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_1041.jpg 1041w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_1043.jpg 1043w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_1417.jpg 1417w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_1449.jpg 1449w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_1_1,c_fill,g_auto__c_scale,w_1534.jpg 1534w">
+                    <source
+                    media="(min-width: 768px) and (max-width: 991px)"
+                    sizes="(max-width: 1982px) 100vw, 1982px"
+                    srcset="
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_926.jpg 926w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1088.jpg 1088w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1259.jpg 1259w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1453.jpg 1453w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1602.jpg 1602w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1745.jpg 1745w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1891.jpg 1891w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_4_3,c_fill,g_auto__c_scale,w_1982.jpg 1982w">
+                    <source
+                    media="(min-width: 992px) and (max-width: 1199px)"
+                    sizes="(max-width: 2398px) 100vw, 2398px"
+                    srcset="
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_1184.jpg 1184w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_1422.jpg 1422w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_1629.jpg 1629w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_1779.jpg 1779w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_1959.jpg 1959w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_2191.jpg 2191w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_2318.jpg 2318w,
+                    ./images/banner-responsive/fondorick_or9hp4_ar_16_9,c_fill,g_auto__c_scale,w_2398.jpg 2398w">
+                    <img
+                    sizes="(max-width: 3840px) 100vw, 3840px"
+                    srcset="
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_1200.jpg 1200w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_1661.jpg 1661w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_2063.jpg 2063w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_2501.jpg 2501w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_2968.jpg 2968w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_3382.jpg 3382w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_3627.jpg 3627w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_3692.jpg 3692w,
+                    ./images/banner-responsive/fondorick_or9hp4_c_scale,w_3840.jpg 3840w"
+                    src="./images/banner-responsive/fondorick_or9hp4_c_scale,w_3840.jpg"
+                    alt="">
+                    </picture>
+            </div>
             <div class="banner__text">
                 <h3>Sé que esta situación puede ser intimidante. Miras a tu alrededor y todo da miedo y es diferente,
                     pero ¿sabes qué? ... hay que encarar esas situaciones, avanzar contra ellas como un toro - es así
@@ -71,6 +142,15 @@
             </div>
         </section>
         <section id="skills" class="block skills__section">
+            <div class="biography hidden">
+                <h3>Rick Sánchez de la dimensión de la Tierra C-137 viaja frecuentemente en aventuras por el espacio y otros planetas y dimensiones
+                    utilizando su destreza matemática y científica junto con apatía y cinismo egoísta, emerge a salvo de cualquier situación, sin importar las consecuencias de su autopreservación.
+                    Alimenta su coche volador con una batería que contiene un universo en miniatura, o microverso, cuyos habitantes, sin saberlo, proporcionan la electricidad necesaria.
+                </h3>
+            </div>
+            <div class="skill__wrapper">
+
+            
             <h2 class="section__title">Habilidades</h2>
             <div class="skill__grid">
                 <div class="skill__item">
@@ -130,87 +210,81 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="projects" class="block project__section">
-            <h2 class="section__title">Inventos</h2>
-            <div class="wrapper">
-            <ul class="inventions">
-                <h3>Miscelanea</h3>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                            <img src="images/spacecruiser.png" alt="Space Cruiser">
-                        </div>
-                        <figcaption>Space Cruiser</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                        <img src="images/rayoreductor.png" alt="Rayo reductor">
-                    </div>
-                        <figcaption>Rayo reductor</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                        <img src="images/portalgun.png" alt="Pistola de portales">
-                    </div>
-                        <figcaption>Pistola de portales</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                        <img src="images/cajaMeeseeks.png" alt="Caja Meeseeks">
-                    </div>
-                        <figcaption>Caja Meeseeks</figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <ul class="inventions">
-                <h3>Armas</h3>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                            <img src="images/spacecruiser.png" alt="Space Cruiser">
-                        </div>
-                        <figcaption>Space Cruiser</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                        <img src="images/rayoreductor.png" alt="Rayo reductor">
-                    </div>
-                        <figcaption>Rayo reductor</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                        <img src="images/portalgun.png" alt="Pistola de portales">
-                    </div>
-                        <figcaption>Pistola de portales</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure class="item__inventions">
-                        <div class="item__container">
-                        <img src="images/cajaMeeseeks.png" alt="Caja Meeseeks">
-                    </div>
-                        <figcaption>Caja Meeseeks</figcaption>
-                    </figure>
-                </li>
-            </ul>
         </div>
+        </section>
+        <section class="block" id="form">
+            <h2 class="section__title">Formulario de contacto</h2>
+            <form method="post" action="/contact" class="formulario">
+                <div class="field">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="Tu nombre"  name="name" required>
+                </div>
+                <div class="field">
+                    <label for="lastname">Apellidos:</label>
+                    <input type="text" id="lastname" placeholder="Tus apellidos"  name="lastname" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Telefono:</label>
+                    <input title="Error formato: nnn-nnn-nnn" type="tel"  placeholder='111-222-333'
+                        id="phone" name="user_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                </div>
+                <fieldset>
+                    <legend>¿Donde me conociste?</legend>
+                    <div class="options">
+                        <div>
+                        <input type="radio" name="place" id="Universidad" value="Universidad" checked>
+                        <label for="Universidad">Universidad</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="place" id="Keepcoding" value="Keepcoding">
+                        <label for="Keepcoding">Keepcoding kick-off</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="place" id="Colegio" value="Colegio">
+                        <label for="Colegio">Colegio</label>
+                        </div>
+                        <div>
+                        <input type="radio" name="place" id="GitHub" value="GitHub">
+                        <label for="GitHub">GitHub</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="bio">Informacion personal</label>
+                    <textarea name="bio" id="bio" maxlength="180" rows="5"></textarea>
+                </div>
+                <div class="field">
+                    <label for="github">Github Id:</label>
+                    <input title="@yourGithubId" type="text"  placeholder='@yourGithubId'
+                        id="github" name="user_github" pattern="^@[^\s]+">
+                </div>
+                <div>
+                    <label for="newsletter">Recivir newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" value="true">
+                </div>
+                
+                <div class="field">
+                    <input type="reset" value="Reset">
+                    <input type="submit" id="botton" value="Guardar">
+                </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__text">
-            <h3></h3>
-            <h2></h2>
+            <div class="icon__container">
+                <i class="fa-brands fa-square-x-twitter"></i>
+
+            </div>
+            <div class="icon__container">
+                <i class="fa-brands fa-square-instagram"></i>
+
+            </div>
+            <div class="icon__container">
+                <i class="fa-brands fa-square-facebook"></i>
+
+            </div>
+            
         </div>
     </footer>
 </body>

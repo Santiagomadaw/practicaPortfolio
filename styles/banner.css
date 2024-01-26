@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .banner__img{
     
@@ -12,7 +13,6 @@
     bottom: 0;
     aspect-ratio: 1;
     width: 98.7vw;
-    background-image: url('../images/bannerMovile.png');
     display: flex;
     background-size: 100vw;;
     justify-content: center;
@@ -21,12 +21,13 @@
 }
 .banner__text{
     position: absolute;;
-    z-index: 23;
+    z-index: 5;
     padding: 6vw;
 }
 
 .banner__text h3{
     font-style: italic;
+    font-size: large;
     color: black;
 }
 .banner__text p{

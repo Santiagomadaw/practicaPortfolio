@@ -1,16 +1,11 @@
 :root {
-    /*EFECTS*/
+
     --shadow: #162323;
     --shine: #f8ffef;
-    --empty-alpha: #ffffff00;
-    /*BUBBLE*/
-
-    --container-border-color: #50fd00;
-    --container-bg-alpha: #00af09e1;
-
+    --container-color: #ecb827;
     --bg-color: #bebebe;
 
-    --head-foot-color: #333333;
+    --head-foot-color: #01495f;
     --head-foot-shadow: #1b2932b4;
 
 
@@ -18,13 +13,35 @@
     --banner-text-color: #c4c4c4;
 
     --font-one: Anton, sans-serif;
-    --hover-color: #af00a6e1;
+    --hover-color: #FF5A5F;
 
     --avatar-size: 70vw;
 
 }
-.hidden{
-    visibility: hidden;
+@media (prefers-color-scheme: dark) {
+
+    :root {
+
+
+        --shadow: #162323;
+        --shine: #f8ffef;
+        --container-color: #FF4081;
+        --bg-color: #01495F;
+        
+        --head-foot-color: #3e758c;
+        --head-foot-shadow: #1b2932b4;
+        
+        
+        --inner-text-color: #e0e0e0;
+        --banner-text-color: #01495F;
+        
+        --font-one: Anton, sans-serif;
+        --hover-color: #ffe4ff;
+        
+        --avatar-size: 70vw;
+        
+    }
+    
 }
 html{
     scroll-behavior: smooth;
@@ -41,25 +58,12 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-.bg__image {
-    position: fixed;
-    top: 0vh;
-    z-index: -10;
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/images/background_image.png');
-    background-size: 100vmax;
-    background-repeat: no-repeat;
-    opacity: 0.6;
+.section__title{
+    text-shadow: 2px 2px 2px var(--shadow);
 }
 h3{
     margin: 0;
+    letter-spacing: .2em;
     font-family: var(--font-one);
     font-size: 1em;
     font-weight: lighter;
@@ -68,6 +72,7 @@ h3{
 }
 h2{
     margin: 0;
+    letter-spacing: .5em;
     font-family: var(--font-one);
     font-weight: lighter;
     font-size: 1.5em;
@@ -77,6 +82,7 @@ h2{
 h1 {
     margin: 0;
     font-family: var(--font-one);
+    letter-spacing: .3em;
     font-weight: lighter;
     font-size: 2em;
     color: var(--inner-text-color);
@@ -94,7 +100,6 @@ p {
     padding-bottom: 3vh;
 }
 .block{
-    border: 2px red solid;
     height: 100vh;
     padding-top: 20vh;
     padding-bottom: 20vh;
@@ -102,7 +107,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1024px;
+    max-width: 120vh;
 }
 .symbols {
     font-family: 'Material Symbols Outlined';

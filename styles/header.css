@@ -1,10 +1,7 @@
 .header {
     display: flex;
-    flex-direction: column;
-    padding-right: 12vw;
-    padding-left: 12vw;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
     position: fixed;
     top: 0;
     height: 10vh;
@@ -18,8 +15,9 @@
     display: none;
 }
 .header .nav {
-    top:10vh;
-    right: -20vw;
+    z-index: -1;
+    top:-16vh;
+    right: 0vw;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -28,8 +26,20 @@
 }
 #menu:checked ~ .nav  {
     top:10vh;
-    right: 9vw;
+    right: 0vw;
 }
+.bambalina{
+    position: absolute;
+    z-index: 0;
+    height: 10vh;
+    width: 100vw;
+    background: var(--head-foot-color);
+}
+.header img {
+    height: 7vh;
+    position: relative;
+}
+
 .header .nav .bottoms {
     padding: 0;
     list-style: none;
@@ -47,9 +57,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: wheat;
+    background: var(--container-color);
     text-align: center;
-    width: 5.5em;
+    width: 10em;
     font-size: 0.6em;
     height: 3em;
     user-select: none;
@@ -58,9 +68,12 @@
 } 
 .menu-bottom .txt-exit{
     display: none;
+    font-size:3em;
+    
 }
 .menu-bottom  .txt-menu{
     display: block;
+    font-size:3em;
 }
 #menu:checked~.menu-bottom > .txt-exit{
     display: block;
@@ -68,43 +81,34 @@
 #menu:checked~.menu-bottom > .txt-menu{
     display: none;
 }
-
-/* .bottoms__item {
+.header__container{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    padding-right: 30px;
+    padding-left: 30px;
+    justify-content: space-between;
     align-items: center;
-    border:2px var(--banner-text-color) solid;
-    background: var(--container-bg-alpha);
-    text-align: center;
-    border-radius: 0.5em;
-    padding: 0.2em;
-    width: 5.5em;
-    font-size: 0.6em;
-    height: 3em;
-    user-select: none;
+    position: fixed;
+    top: 0;
+    max-width: calc(120vh);
+    height: 10vh;
+    width: 100vw;
+    background: var(--head-foot-color);
+    z-index: 10;
+    backdrop-filter: blur(2px);
 
-
-} */
-
-
-
-@media (hover: hover) {
-    .bottoms__item:hover {
-        background-color: var(--hover-color);
-
-    }
 }
 
 
 
 
+@media (hover: hover) {
+    .header .nav .bottoms__item:hover {
+        transition: .4s;
+        background-color: var(--hover-color);
 
-
-
-
-
-
-
+    }
+}
 
 
 .menu-bottom {
@@ -115,10 +119,11 @@
     text-align: center;
     border-radius: 0.5em;
     padding: 0.8em;
-    width: 3em;
+    width: 3.5em;
+    height: 3.5em;
     font-size: 0.62em;
     color: var(--banner-text-color);
-    height: 3em;
+    z-index: 1;
     user-select: none;
 }
 
@@ -126,10 +131,40 @@
     text-decoration: none;
     font-family: var(--font-one);
     font-weight: lighter;
-    color: var(--inner-text-color);
-    font-size: 1em;
+    color: black;
+    font-size: 1.2em;
 
 
+}
+@media (width >= 800px) {
+    .bottoms__item {
+        border:2px var(--banner-text-color) solid;
+        background: var(--container-color);
+        border-radius: 0.5em;
+        padding: 0.2em;
+        width: 5.5em;
+        font-size: 0.6em;
+        height: 3em;
+        user-select: none;
+    
+    
+    }
+    .menu-bottom{
+        display: none;
+    }
+    .header .nav, #menu:checked ~ .nav {
+        top:0vh;
+        right: 0vw;;
+        z-index: 1;
+        position: relative;
+        transition: .4s;
+    }
+    .header .nav .bottoms{
+        gap: 5px;
+        flex-direction: row;
+        transition: .4s;
+    }
+    
 }
 
 

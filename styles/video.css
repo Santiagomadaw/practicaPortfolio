@@ -1,0 +1,24 @@
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    animation: fadeIn 2s linear 1 both;
+    overflow: hidden;
+}
+.video video{
+    max-height: 95%;
+    
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}

@@ -7,6 +7,11 @@
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: repeat(var(--rows), 1fr);
 }
+.block.skills__section{
+    flex-direction: row;
+    gap: 5vw;
+    
+}
 
 .skill__item {
     display: flex;
@@ -17,6 +22,11 @@
     animation: visibility;
     animation-timeline: view();
     animation-fill-mode: both;
+
+}
+.skill__item{
+
+    text-shadow: 2px 2px 2px var(--shadow);
 
 }
 
@@ -38,10 +48,23 @@ position: absolute;
     border-radius: 6px;
 }
 
-
-
-
-
+.skill__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+}
+.biography.hidden{
+    display: none;
+}
+.biography{
+    width: 40%;
+}
+.biography h3{
+    text-align: left;
+    text-shadow: 2px 2px 2px var(--shadow);
+}
 
 .bar__container {
     position: relative;
@@ -141,19 +164,45 @@ position: absolute;
     }
 }
 
-@media (width > 767px) {
-    .skill__grid {
-        width: 70%;
-        gap: 2em;
-        display: grid;
-        --columns: 2;
-        --rows: 3;
+@media (width >= 800px) {
+    .skill__wrapper{
+        width: 50%;
+    }
+    .biography.hidden{
+        display: block;
     }
     .skill__bar {
-        height: 5vh;
+        height: 2vh;
+
     }
     .bar-shine {
     
-        height: 5vh;
+        height: 2vh;
+    }
+}
+@media (width >= 1024px) {
+    .skill__grid {
+        gap: 1em;
+        display: grid;
+    }
+    .skill__item {
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 1vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .skill__bar {
+        height: 3vh;
+    }
+    .bar__container{
+        width: 70%;
+        
+    }
+    .bar-shine {
+    
+        height: 3vh;
     }
 }
