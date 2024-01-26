@@ -28,6 +28,9 @@ figcaption{
     font-size: .8em;
     font-weight: lighter;
     color: var(--inner-text-color);
+    text-shadow: 2px 2px 2px var(--text-improve);
+    letter-spacing: .2em;
+    text-wrap: wrap;
     
 }
 .item__inventions img{
@@ -42,8 +45,7 @@ figcaption{
     border: var(--container-color) 1px solid;
     aspect-ratio: 1;
     background: var(--container-color);
-    box-shadow: 0px 0px 10px 5px var(--shadow),
-                inset 0px 0px 10px 5px var(--shine);
+    box-shadow: 0px 0px 10px 5px var(--shadow);
     overflow: hidden;
     padding: 5px;
     backdrop-filter: blur(2px);
@@ -53,7 +55,6 @@ figcaption{
     padding-bottom: 12vh;
 }
 .wrapper{
-    background: var(--hover-color);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 10px;
@@ -62,7 +63,7 @@ figcaption{
     flex-direction: column;
     overflow-y: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 6px 2px var(--shine),
+    box-shadow: 0px 0px 16px 1px var(--shine),
                 inset 0px 0px 6px 2px var(--shadow);
     gap: 5px;
 

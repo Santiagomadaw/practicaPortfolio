@@ -34,7 +34,8 @@
             <div class="bambalina"></div>
 
         
-        <img src="/images/logolight.png" alt="" srcset="">
+        <img src="/images/logolight.png" alt="Logo" class="logo light">
+        <img src="/images/logodark.png" alt="Logo" class="logo dark">
 
         <input type="checkbox" id="menu">
         <label for="menu" class="menu-bottom"> <span class="symbols txt-menu">menu</span><span class="symbols txt-exit">
@@ -43,22 +44,22 @@
         <nav class="nav">
             <ul class="bottoms">
                 <li class="bottoms__item">
-                    <a class="btn" href="#start">Inicio</a>
+                    <a class="btn" href="./index.html#start">Inicio</a>
                 </li>
                 <li class="bottoms__item">
-                    <a class="btn" href="#quote">Cita</a>
+                    <a class="btn" href="./index.html#quote">Cita</a>
                 </li>
                 <li class="bottoms__item">
-                    <a class="btn" href="#skills">Habilidades</a>
+                    <a class="btn" href="./index.html#skills">Habilidades</a>
+                </li>
+                <li class="bottoms__item">
+                    <a class="btn" href="./index.html#form">Formulario</a>
                 </li>
                 <li class="bottoms__item">
                     <a class="btn" href="./galery.html">Proyectos</a>
                 </li>
                 <li class="bottoms__item">
                     <a class="btn" href="./video.html">Video</a>
-                </li>
-                <li class="bottoms__item">
-                    <a class="btn" href="#form">Formulario</a>
                 </li>
             </ul>
         </nav>
@@ -68,10 +69,11 @@
     <main>
         <section class="presentation__section block ">
             <div class="presentation__image">
-                <img src="images/AvatarRick.png" alt="Foto perfil">
+                <img src="images/AvatarRick.png" class="foto perfil dark" alt="Foto perfil">
+                <img src="images/AvatarRickLight.png" class="foto perfil light" alt="Foto perfil">
             </div>
             <div class="presentation__text">
-                <h3>Hi, im</h3>
+                <h3>Hola, soy</h3>
                 <h1>Rick Sánchez</h1>
                 <h3>Cientifico interdimensional</h3>
             </div>
@@ -214,7 +216,7 @@
         </section>
         <section class="block" id="form">
             <h2 class="section__title">Formulario de contacto</h2>
-            <form method="post" action="/contact" class="formulario">
+            <form method="post" action="/contact" class="form-box">
                 <div class="field">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" placeholder="Tu nombre"  name="name" required>
@@ -273,15 +275,15 @@
     <footer class="footer">
         <div class="footer__text">
             <div class="icon__container">
-                <i class="fa-brands fa-square-x-twitter"></i>
+                <a href="http://www.x.com" class="fa-brands fa-square-x-twitter"></a>
 
             </div>
             <div class="icon__container">
-                <i class="fa-brands fa-square-instagram"></i>
+                <a href="http://www.instagram.com" class="fa-brands fa-square-instagram"></a>
 
             </div>
             <div class="icon__container">
-                <i class="fa-brands fa-square-facebook"></i>
+                <a href="http://www.facebook.com" class="fa-brands fa-square-facebook"></a>
 
             </div>
             

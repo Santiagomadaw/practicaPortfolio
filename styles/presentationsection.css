@@ -10,7 +10,7 @@
     overflow: hidden;
     backdrop-filter: blur(2px);
     height: 50%;
-    left: 0%;
+    left: -10vw;
     /* animation: minimize,rotator;
     animation-timeline: scroll(nearest);
     animation-range: cover 0 cover 40v;
@@ -29,10 +29,52 @@
 .presentation__text{
     display: flex;
     flex-direction: column;
+    scale: 1;
+
+    text-shadow: 2px 2px 2px var(--text-improve);
 }
 .presentation__section{
-    justify-content: flex-start;
-    padding-top: 30vh;
+    display: flex;
+    padding-top: 10vh;
+    gap: 30px;
+}
+.presentation__image .foto.perfil.light{
+    display: flex;
+}
+.presentation__image .foto.perfil.dark{
+    display: none;
+}
+@media (prefers-color-scheme: dark) {
+    .presentation__image .foto.perfil.light{
+        display: none;
+    }
+    .presentation__image .foto.perfil.dark{
+        display: block;
+    }
+}
+@media (width >= 800px) {
+
+    .presentation__section{
+        flex-direction: row;
+    }
+    .presentation__text {
+        scale: 1.5;
+    }
+    .presentation__image {
+        scale: 0.7;
+    }
 }
 
+    @media (width >= 1024px) {
+
+        .presentation__section{
+            flex-direction: row;
+        }
+        .presentation__text {
+            scale: 2;
+        }
+        .presentation__image {
+            scale: 0.8;
+        }
+    }
 

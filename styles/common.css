@@ -2,44 +2,31 @@
 
     --shadow: #162323;
     --shine: #f8ffef;
+    --text-improve: var(--shine);
     --container-color: #ecb827;
-    --bg-color: #bebebe;
-
-    --head-foot-color: #01495f;
+    --bg-color: #ffffff;
+    --head-foot-color: #016583;
     --head-foot-shadow: #1b2932b4;
-
-
     --inner-text-color: #333333;
-    --banner-text-color: #c4c4c4;
-
+    --outer-text-color: #ffffff;
     --font-one: Anton, sans-serif;
     --hover-color: #FF5A5F;
-
     --avatar-size: 70vw;
-
 }
 @media (prefers-color-scheme: dark) {
-
     :root {
-
-
         --shadow: #162323;
         --shine: #f8ffef;
-        --container-color: #FF4081;
-        --bg-color: #01495F;
-        
-        --head-foot-color: #3e758c;
-        --head-foot-shadow: #1b2932b4;
-        
-        
+        --text-improve: var(--shadow);
+        --container-color: #dc7c00;
+        --bg-color: #2e2e2e;
+        --head-foot-color: #1F1F1F;
+        --head-foot-shadow: #181818;
         --inner-text-color: #e0e0e0;
-        --banner-text-color: #01495F;
-        
+        --outer-text-color: #e0e0e0;
         --font-one: Anton, sans-serif;
-        --hover-color: #ffe4ff;
-        
+        --hover-color: #03A9F4;
         --avatar-size: 70vw;
-        
     }
     
 }
@@ -53,13 +40,13 @@ html{
 
 body {
     background-color: var(--bg-color);
-    opacity: .9;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .section__title{
-    text-shadow: 2px 2px 2px var(--shadow);
+    text-shadow: 2px 2px 2px var(--text-improve);
+    text-align: center;
 }
 h3{
     margin: 0;
@@ -69,10 +56,11 @@ h3{
     font-weight: lighter;
     color: var(--inner-text-color);
     
+    
 }
 h2{
     margin: 0;
-    letter-spacing: .5em;
+    letter-spacing: .2em;
     font-family: var(--font-one);
     font-weight: lighter;
     font-size: 1.5em;
@@ -82,7 +70,7 @@ h2{
 h1 {
     margin: 0;
     font-family: var(--font-one);
-    letter-spacing: .3em;
+    letter-spacing: .25em;
     font-weight: lighter;
     font-size: 2em;
     color: var(--inner-text-color);
@@ -94,6 +82,9 @@ p {
     font-size: 0.8em;
     color: var(--inner-text-color);
 }
+a{
+    text-decoration: none;
+}
 .section__title{
     position: relative;
     top: 0;
@@ -101,8 +92,8 @@ p {
 }
 .block{
     height: 100vh;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +104,7 @@ p {
     font-family: 'Material Symbols Outlined';
     text-transform: none;
     font-size: 1.62em;
-    color: var(--banner-text-color);
+    color: var(--outer-text-color);
     user-select: none;
 }
 

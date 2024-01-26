@@ -26,7 +26,7 @@
 }
 .skill__item{
 
-    text-shadow: 2px 2px 2px var(--shadow);
+    text-shadow: 2px 2px 2px var(--text-improve);
 
 }
 
@@ -63,7 +63,7 @@ position: absolute;
 }
 .biography h3{
     text-align: left;
-    text-shadow: 2px 2px 2px var(--shadow);
+    text-shadow: 2px 2px 2px var(--text-improve);
 }
 
 .bar__container {

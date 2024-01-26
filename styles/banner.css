@@ -23,6 +23,8 @@
     position: absolute;;
     z-index: 5;
     padding: 6vw;
+    text-wrap: pretty;
+    text-shadow: 1px 1px 3px var(--text-improve);
 }
 
 .banner__text h3{

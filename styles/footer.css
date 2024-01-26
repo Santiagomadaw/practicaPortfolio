@@ -24,9 +24,8 @@
 
 
 }
-.icon__container{
+.footer__text .icon__container{
     display: flex;
-    
     align-items: center;
     justify-content: center;
     aspect-ratio: 1;
@@ -36,14 +35,13 @@
 
 .fa-brands{
     position: fixed;
-    color: var(--banner-text-color);
+    color: var(--outer-text-color);
     font-size:3em;
     transition: .3s;
 }
 
 @media (hover: hover) {
     .fa-brands:hover{
-        color: var(--banner-text-color);
         animation: jump .8s ease-in-out infinite both;
         
     }
