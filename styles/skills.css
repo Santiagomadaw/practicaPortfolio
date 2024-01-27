@@ -73,7 +73,7 @@
 .biography {
     width: 68vw;
     max-width: 1024px;
-    line-height: 1.85;
+    line-height: 1.5;
     
 }
 .skill__item h3{
@@ -196,6 +196,8 @@
         }
         .biography h3 {
             font-size: 1.2em;
+            line-height: 1.85;
+
         }
     
     }
