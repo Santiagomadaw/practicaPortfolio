@@ -1,5 +1,6 @@
 .skill__grid {
-    width: 90%;
+    max-width: 100vh;
+    width: 85vw;
     gap: .50em;
     display: grid;
     --columns: 1;
@@ -7,69 +8,87 @@
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-template-rows: repeat(var(--rows), 1fr);
 }
-.block.skills__section{
-    flex-direction: row;
-    gap: 5vw;
-    
+
+.block.skills__section {
+    padding-top: 20vh;
+    gap: 2vh;
+
 }
 
 .skill__item {
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
     gap: 1vh;
+    justify-content: space-between;
+    align-items: center;
 }
-.skill__item{
+
+.skill__item {
     animation: visibility;
     animation-timeline: view();
     animation-fill-mode: both;
 
 }
-.skill__item{
 
+.skill__item {
+    user-select: none;
     text-shadow: 2px 2px 2px var(--text-improve);
 
 }
+
 
 .skill__bar {
 
     width: var(--percent);
-    height: 3.5vh;
+    height: 2.5vh;
     background: var(--bar-color);
     border-radius: 6px;
     animation: loading 3s ease-out;
 }
+
 .bar-shine {
-position: absolute;
+    position: absolute;
     width: 100%;
-    height: 3.5vh;
+    height: 2.5vh;
     z-index: 5;
     border: 1px solid var(--inner-text-color);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 9%, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 30%, rgba(255,253,255,0) 40%, rgba(255,253,255,0) 75%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 9%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 30%, rgba(255, 253, 255, 0) 40%, rgba(255, 253, 255, 0) 75%, rgba(0, 0, 0, 1) 100%);
     border-radius: 6px;
 }
 
-.skill__wrapper{
+.skill__wrapper {
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: 50%;
     align-items: center;
     justify-content: center;
 }
-.biography.hidden{
+
+.biography.hidden {
     display: none;
 }
-.biography{
-    width: 40%;
+
+.biography {
+    width: 85vw;
+    max-width: 1024px;
 }
-.biography h3{
+.skill__item h3{
+    font-size: .9em;
+
+}
+.biography h3 {
     text-align: left;
+    font-size: .7em;
     text-shadow: 2px 2px 2px var(--text-improve);
 }
 
 .bar__container {
+    width: 50%;
     position: relative;
     box-shadow: 0px 1px 10px 5px var(--head-foot-shadow),
-    inset 0px 6px 6px -0px var(--shadow);
+        inset 0px 6px 6px -0px var(--shadow);
     border-radius: 6px;
 
 }
@@ -126,22 +145,24 @@ position: absolute;
     --percent: 100%;
     --bar-color: #00af09e1;
 }
+
 @keyframes visibility {
     0% {
         display: none;
-        
+
 
     }
-    
+
     50% {
         display: flex;
 
     }
+
     100% {
         display: none;
 
     }
-    
+
 }
 
 @keyframes loading {
@@ -151,8 +172,9 @@ position: absolute;
         box-shadow: 0px 0px 1px 2px var(--bar-color);
 
     }
-    80%{
-        
+
+    80% {
+
         width: var(--percent);
         box-shadow: 0px 0px 16px 4px var(--bar-color);
     }
@@ -163,28 +185,45 @@ position: absolute;
 
     }
 }
-
-@media (width >= 800px) {
-    .skill__wrapper{
-        width: 50%;
-    }
-    .biography.hidden{
-        display: block;
-    }
-    .skill__bar {
-        height: 2vh;
-
-    }
-    .bar-shine {
+@media (width >=425px) {
+    .bar__container {
+        width: 60%;
+        .skill__item h3{
+            font-size: 1em;
+        
+        }
+        .biography h3 {
+            font-size: 1.2em;
+        }
     
-        height: 2vh;
     }
 }
-@media (width >= 1024px) {
+@media (width >=800px) {
+    .skill__wrapper {
+        width: 50%;
+    }
+
+    .skill__bar {
+        height: 2.5vh;
+
+    }
+
+    .bar-shine {
+
+        height: 2.5vh;
+    }
+    .bar__container {
+        width: 80%;
+        
+    
+    }
+}
+
+@media (width >=1024px) {
     .skill__grid {
-        gap: 1em;
         display: grid;
     }
+
     .skill__item {
 
         display: flex;
@@ -194,15 +233,18 @@ position: absolute;
         justify-content: space-between;
         align-items: center;
     }
+
     .skill__bar {
         height: 3vh;
     }
-    .bar__container{
+
+    .bar__container {
         width: 70%;
-        
+
     }
+
     .bar-shine {
-    
+
         height: 3vh;
     }
 }

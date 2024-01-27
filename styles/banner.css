@@ -25,9 +25,11 @@
     padding: 6vw;
     text-wrap: pretty;
     text-shadow: 1px 1px 3px var(--text-improve);
+    user-select: none;
 }
 
 .banner__text h3{
+    
     font-style: italic;
     font-size: large;
     color: black;
