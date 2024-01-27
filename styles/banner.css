@@ -20,23 +20,24 @@
     mix-blend-mode: normal;
 }
 .banner__text{
-    position: absolute;;
+    position: absolute;
+    line-height: 1.6;
     z-index: 5;
-    padding: 6vw;
+    padding: 4vw;
     text-wrap: pretty;
-    text-shadow: 1px 1px 3px var(--text-improve);
     user-select: none;
+    background-color: var(--bg-color-alpha);
 }
 
 .banner__text h3{
     
     font-style: italic;
-    font-size: large;
-    color: black;
+    font-size: 1.2em;
+    color: var(--inner-text-color);
 }
 .banner__text p{
-    font-weight: bold;
-    color: black;
+    color: var(--inner-text-color);
     text-align: end;
     padding-right: 5vw;
+    letter-spacing: .2em
 }

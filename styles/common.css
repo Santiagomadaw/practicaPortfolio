@@ -5,6 +5,8 @@
     --text-improve: var(--shine);
     --container-color: #ecb827;
     --bg-color: #ffffff;
+    --bg-color-alpha: #ffffff80;
+
     --head-foot-color: #016583;
     --head-foot-shadow: #1b2932b4;
     --inner-text-color: #333333;
@@ -20,6 +22,8 @@
         --text-improve: var(--shadow);
         --container-color: #dc7c00;
         --bg-color: #2e2e2e;
+        --bg-color-alpha: #2e2e2e8a;
+
         --head-foot-color: #1F1F1F;
         --head-foot-shadow: #181818;
         --inner-text-color: #e0e0e0;
@@ -35,6 +39,7 @@ html{
 }
 * {
     box-sizing: border-box;
+    
 
 }
 
@@ -88,17 +93,18 @@ a{
 .section__title{
     position: relative;
     top: 0;
+    font-size: 3em;
     padding-bottom: 3vh;
     user-select: none;
 }
 .block{
-    height: 100vh;
+    height: 90vh;
     padding-top: 12vh;
-    padding-bottom: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+
     width: 90vw;
     max-width: 120vh;
 }
