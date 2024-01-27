@@ -60,27 +60,22 @@
 
     }
     .presentation__text h1{
-        font-size: 4em;
+        font-size: 3.8em;
     }
     .presentation__text h3{
-        font-size: 2em;
+        font-size: 1.9em;
     }
     .presentation__image {
-        height: 33%;
+        height: 44%;
     }
 }
 
     @media (width >= 1024px) {
 
         
-        .presentation__text h1{
-            font-size: 5em;
-        }
-        .presentation__text h3{
-            font-size: 2.5em;
-        }
+        
         .presentation__image {
-            height: 35%;
+            height: 45%;
         }
     }
 

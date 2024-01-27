@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0vh;
     
 }
 .banner__img{
@@ -21,10 +22,9 @@
 }
 .banner__text{
     position: absolute;
-    line-height: 1.6;
+    line-height: 1.4;
     z-index: 5;
-    padding: 4vw;
-    text-wrap: pretty;
+    padding: 3vw;
     user-select: none;
     background-color: var(--bg-color-alpha);
 }
@@ -32,12 +32,28 @@
 .banner__text h3{
     
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1em;
+    letter-spacing: .07em;
+
     color: var(--inner-text-color);
 }
 .banner__text p{
     color: var(--inner-text-color);
     text-align: end;
     padding-right: 5vw;
-    letter-spacing: .2em
+    letter-spacing: .1em;
+}
+
+@media (width >=800px) {
+    .banner__text h3{
+    
+        font-size: 1.2em;
+    }
+}
+
+@media (width >=1024px) {
+    .banner__text h3{
+    
+        font-size: 1.4em;
+    }
 }

@@ -1,6 +1,6 @@
 .skill__grid {
     max-width: 100vh;
-    width: 68vw;
+    width: 85vw;
     max-width: 1024px;
     gap: .50em;
     display: grid;
@@ -71,7 +71,7 @@
 }
 
 .biography {
-    width: 68vw;
+    width: 85vw;
     max-width: 1024px;
     line-height: 1.5;
     

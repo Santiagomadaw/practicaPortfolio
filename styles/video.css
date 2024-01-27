@@ -1,4 +1,8 @@
 
+#video{
+    padding:0;
+}
+
 .video{
     display: flex;
     justify-content: center;

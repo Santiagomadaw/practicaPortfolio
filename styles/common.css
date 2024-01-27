@@ -15,6 +15,7 @@
     --hover-color: #FF5A5F;
     --avatar-size: 70vw;
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --shadow: #162323;
@@ -32,14 +33,16 @@
         --hover-color: #03A9F4;
         --avatar-size: 70vw;
     }
-    
+
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 * {
     box-sizing: border-box;
-    
+
 
 }
 
@@ -49,29 +52,38 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.section__title{
+
+.section__title {
     text-shadow: 2px 2px 2px var(--text-improve);
     text-align: center;
+    position: relative;
+    top: 0;
+    font-size: 1.8em;
+    padding-bottom: 2vh;
+    user-select: none;
 }
-h3{
+
+h3 {
     margin: 0;
     letter-spacing: .2em;
     font-family: var(--font-one);
     font-size: 1em;
     font-weight: lighter;
     color: var(--inner-text-color);
-    
-    
+
+
 }
-h2{
+
+h2 {
     margin: 0;
     letter-spacing: .2em;
     font-family: var(--font-one);
     font-weight: lighter;
     font-size: 1.5em;
     color: var(--inner-text-color);
-    
+
 }
+
 h1 {
     margin: 0;
     font-family: var(--font-one);
@@ -80,6 +92,7 @@ h1 {
     font-size: 2em;
     color: var(--inner-text-color);
 }
+
 p {
     margin: 0;
     font-family: var(--font-one);
@@ -87,20 +100,15 @@ p {
     font-size: 0.8em;
     color: var(--inner-text-color);
 }
-a{
+
+a {
     text-decoration: none;
 }
-.section__title{
-    position: relative;
-    top: 0;
-    font-size: 2.5em;
-    padding-bottom: 3vh;
-    user-select: none;
-}
-.block{
+
+.block {
     height: 90vh;
     padding-top: 12vh;
-    padding-bottom: 12vh; 
+    padding-bottom: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,16 +117,19 @@ a{
     width: 90vw;
     max-width: 120vh;
 }
-.block:first-child{
+
+.block:first-child {
     padding-top: 30vh;
     height: 100vh;
 
 }
-.block:last-child{
+
+.block:last-child {
     padding-bottom: 20vh;
     height: 100vh;
 
 }
+
 .symbols {
     font-family: 'Material Symbols Outlined';
     text-transform: none;
@@ -128,3 +139,19 @@ a{
 }
 
 
+@media (width >=800px) {
+    .section__title {
+        font-size: 2.5em;
+    }
+    .block:first-child {
+        padding-top: 20vh;
+    
+    }
+    
+}
+
+@media (width >=1024px) {
+    .section__title {
+        font-size: 3em;
+    }
+}
